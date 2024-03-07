@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0e031a;
+    font-family: lato, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 100px auto 0;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+main>* {
+    grid-row: 1 / 2;
+}
+
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40% 0;
+    color: #fff;
+    font-size: 23px;
+    background-color: rgb(255, 0, 64);
+}
+
+
+.signup a button {
+    border: none;
+    background-color: #fff;
+    color: #0e031a;
+
+}
+
+.login {
+    grid-column: 1 / 2;
+}
+
+.signup {
+
+    grid-column: 2 / 3;
+}
+
+form {
+    padding: 30px 20px;
+    max-width: 500px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.5s;
+}
+
+.back-layer {
+    height: 520px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: #fff;
+    z-index: 5;
+    transition: clip-path 0.3s;
+}
+
+input {
+    display: block;
+    height: 40px;
+    width: 300px;
+    border-radius: 15px;
+    padding-left: 15px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: rgb(255, 0, 64);
+}
+
+label {
+    font-weight: 600;
+}
+
+.buttonal {
+    background-color: white transparent ;
+    border: 2px solid ;
+    border-radius: 15px ;
+    color: rgb(255, 0, 64)  ;
+    width: 120px ;
+    height: 40px ;
+    text-transform: uppercase ;
+    font-weight: 600 ;
+    font-size: 16px ;
+    cursor: pointer;
+}
+
+form .buttonal:hover {
+    background-color: rgb(255, 0, 64);
+    color: #fff ;
+}
